@@ -6,7 +6,7 @@ def formulario_solicitud(request):
         form = SolicitudForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('confirmacion_solicitud')
+            return redirect('solicitudes:confirmacion_solicitud')
     else:
         form = SolicitudForm()
 

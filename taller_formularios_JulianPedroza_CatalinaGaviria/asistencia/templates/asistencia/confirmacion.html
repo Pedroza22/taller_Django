@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia Confirmada</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+        .container { max-width: 600px; margin: auto; padding: 40px; border: 1px solid #007bff; border-radius: 10px; background-color: #e9ecef; }
+        h1 { color: #007bff; }
+        a { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; }
+        a:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Asistencia registrada con éxito!</h1>
+        <p>Tus datos han sido almacenados correctamente en la base de datos.</p>
+        <a href="{% url 'asistencia:formulario_asistencia' %}">Registrar nueva asistencia</a>
+    </div>
+</body>
+</html>

@@ -4,5 +4,6 @@ from . import views
 app_name = 'asistencia'
 
 urlpatterns = [
-    # Tu compañera puede añadir las rutas de asistencia aquí
+    path('formulario/', views.formulario_asistencia, name='formulario_asistencia'),
+    path('confirmacion/', views.confirmacion_asistencia, name='confirmacion_asistencia'),
 ]
