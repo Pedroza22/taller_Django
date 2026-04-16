@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud Enviada</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+        .container { max-width: 600px; margin: auto; padding: 40px; border: 1px solid #28a745; border-radius: 10px; background-color: #e9ecef; }
+        h1 { color: #28a745; }
+        a { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        a:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Solicitud enviada con éxito!</h1>
+        <p>Hemos recibido tus datos correctamente y los procesaremos pronto.</p>
+        <a href="{% url 'formulario_solicitud' %}">Registrar nueva solicitud</a>
+    </div>
+</body>
+</html>
