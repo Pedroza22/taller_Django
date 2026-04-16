@@ -18,10 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('solicitudes/', include('solicitudes.urls')),
+    path('solicitudes/', include('solicitudes.urls', namespace='solicitudes')),
+    path('asistencia/', include('asistencia.urls', namespace='asistencia')),
+    path('', RedirectView.as_view(url='/solicitudes/', permanent=True)),
 ]
 
 if settings.DEBUG:
